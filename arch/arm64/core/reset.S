@@ -118,9 +118,6 @@ resetwait:
 	b       resetwait
 #endif
 
-	/* Mask all exceptions */
-	msr	DAIFSet, #0xf
-
 #if CONFIG_MP_MAX_NUM_CPUS > 1
 
 	/*
